@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  text-align: center;
+  padding: 16px;
+  line-height: 1.5rem;
+}
+
+.top h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.top h4 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.center {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px; /* Add spacing between grid items */
+  padding: 20px;
+  justify-items: center; /* Center items horizontally */
+}
+
+.box {
+  width: 100%;
+  max-width: 300px; /* Limit box width for smaller screens */
+  border: 1px solid #d9dada;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Maintain aspect ratio */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.description h1 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.description p {
+  font-size: 0.8rem;
+}
+
+.description h3 {
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+.bottom {
+  text-align: center;
+  padding: 16px 0;
+  border-top: 1px solid #d9dada;
+  margin: 0 40px;
+}
+
+.bottom h1 {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #8e8e8e;
+}
+
+/* Responsive Adjustments for Mobile, Tablet, and Desktop */
+@media screen and (max-width: 768px) {
+  .top h1 {
+    font-size: 1.5rem; /* Adjusting font size for mobile */
+  }
+
+  .top h4 {
+    font-size: 0.9rem; /* Adjusting font size for mobile */
+  }
+
+  .description h1 {
+    font-size: 0.9rem; /* Adjusting font size */
+  }
+
+  .description p {
+    font-size: 0.75rem; /* Adjusting font size */
+  }
+
+  .description h3 {
+    font-size: 0.85rem; /* Adjusting font size */
+  }
+
+  .bottom h1 {
+    font-size: 0.9rem; /* Adjusting font size */
+  }
+
+  .box {
+    max-width: 100%; /* Full width for mobile */
+    padding: 15px; /* Adjusting padding for mobile */
+  }
+
+  .center {
+    padding: 10px; /* Adjusting padding for mobile */
+    gap: 15px; /* Reducing gap between items */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top h1 {
+    font-size: 1.3rem; /* Adjust for very small screens */
+  }
+
+  .top h4 {
+    font-size: 0.8rem;
+  }
+
+  .box {
+    max-width: 100%; /* Ensuring full width for the smallest screens */
+    padding: 10px; /* Adjusting padding */
+  }
+
+  .description h1 {
+    font-size: 0.85rem;
+  }
+
+  .description p {
+    font-size: 0.7rem;
+  }
+
+  .description h3 {
+    font-size: 0.8rem;
+  }
+
+  .bottom h1 {
+    font-size: 0.8rem;
+  }
+
+  .center {
+    padding: 5px; /* Reducing space between items */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .top h1 {
+    font-size: 2.5rem; /* Larger text for desktops */
+  }
+
+  .top h4 {
+    font-size: 1.1rem;
+  }
+
+  .description h1 {
+    font-size: 1.1rem;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+
+  .description h3 {
+    font-size: 1rem;
+  }
+
+  .bottom h1 {
+    font-size: 1.1rem;
+  }
+
+  .center {
+    padding: 30px;
+    gap: 25px;
+  }
+
+  .box {
+    max-width: 350px; /* Larger box on desktops */
+    padding: 20px;
+  }
+}
