@@ -1,0 +1,188 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0.6rem;
+  background-color: #fdfbf5;
+}
+
+main {
+  width: 100%;
+  border: 1px solid black;
+  padding: 1.5rem;
+}
+
+.section1 {
+  width: 100%;
+
+  .about {
+    width: 100%;
+    margin-bottom: 1.8rem;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: 400;
+      width: 70%;
+      line-height: 4rem;
+      letter-spacing: 0.1rem;
+      padding: 2rem 0;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.section2 {
+  width: 100%;
+
+  .value {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 3rem;
+      letter-spacing: 0.05rem;
+      padding: 0.8rem 0;
+      width: 97%;
+    }
+
+    #button {
+      margin: 0.8rem 0;
+      background-color: black;
+      color: #fdfbf5;
+      width: fit-content;
+      padding: 0.5rem 1rem;
+      letter-spacing: 0.1rem;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .line {
+    margin: 0.8rem 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+  }
+
+  .box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+
+    svg {
+      width: 4rem;
+      aspect-ratio: 1/1;
+      // background-color: royalblue;
+    }
+    h3 {
+      font-size: 2.1rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin: 0.8rem 0;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 200;
+      // margin-bottom: 0.5rem 0;
+    }
+  }
+}
+
+@media (min-width: 1020px) {
+  body {
+    padding: 1rem;
+  }
+
+  main {
+    padding: 3rem;
+  }
+
+  .section1 {
+    .about {
+      h1 {
+        font-size: 6.5rem;
+        width: 100%;
+        line-height: 6rem;
+        letter-spacing: 0.05rem;
+        padding: 1.5rem 0;
+      }
+
+      img {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  .section2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    .value {
+      display: flex;
+      width: 67%;
+      justify-content: space-between;
+      flex-direction: column;
+    //   position: relative;
+      // background-color: rgb(192, 225, 225);
+      h1 {
+        position: sticky;
+        top: 0%;
+        font-size: 5rem;
+        width: 80%;
+        font-weight: 400;
+        line-height: 5rem;
+        letter-spacing: 0.05rem;
+        padding: 0.8rem 0;
+      }
+    }
+
+    .line {
+        // margin: 0.8rem 0;
+        height: initial;
+        width: 1px;
+        background-color: black;
+      }
+
+    .boxes {
+      width: 33%;
+
+      .line {
+        // margin: 0.8rem 0;
+        height: 1px;
+        width: 100%;
+        background-color: black;
+      }
+
+    }
+  }
+}
